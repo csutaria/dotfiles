@@ -29,7 +29,7 @@ alias vimdiff='nvim -d'
 
 # dotfile management based on:
 # https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
-alias config='/usr/bin/git --git-dir=/home/cyrus/repositories/dotfiles/ --work-tree=/home/cyrus'
+alias config="/usr/bin/git --git-dir=$HOME/repositories/dotfiles/ --work-tree=$HOME"
 
 # make ctrl-c put line in history
 # https://github.com/bentomas/dotfiles/blob/master/zshrc
