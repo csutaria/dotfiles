@@ -7,7 +7,7 @@ setopt appendhistory beep
 bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/csutaria/.zshrc'
+zstyle :compinstall filename "$HOME/.zshrc"
 zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
 autoload -Uz compinit
 compinit
