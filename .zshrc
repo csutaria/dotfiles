@@ -15,9 +15,11 @@ compinit
 
 setopt nolistbeep autolist AUTO_CD
 autoload -Uz promptinit; promptinit
-PURE_PROMPT_SYMBOL='>'
-PURE_GIT_PULL=0
-prompt pure
+if [[ -e ~/.zfunctions/prompt_pure_setup ]]; then
+  PURE_PROMPT_SYMBOL='>'
+  PURE_GIT_PULL=0
+  prompt pure
+fi
 
 bindkey '^_' undo
 bindkey '^+' redo
