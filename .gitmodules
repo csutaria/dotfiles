@@ -1,0 +1,3 @@
+[submodule "repositories/pure"]
+	path = repositories/pure
+	url = git@github.com:csutaria/pure.git
