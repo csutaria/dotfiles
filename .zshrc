@@ -16,7 +16,7 @@ compinit
 setopt nolistbeep autolist AUTO_CD
 if [[ -e ~/.zfunctions/prompt_pure_setup ]]; then
   autoload -Uz promptinit; promptinit
-  PURE_PROMPT_SYMBOL='>'
+  PURE_PROMPT_SYMBOL='>>'
   PURE_GIT_PULL=0
   prompt pure
 fi
