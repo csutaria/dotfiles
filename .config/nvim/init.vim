@@ -29,21 +29,21 @@ set wildmode=longest:full,full
 
 " Define statusline format
 set statusline=
-set statusline+=%2*\[%n]
+set statusline+=%0*\[%n]
 "buffernr
-set statusline+=%2*\ %<%F\ 
+set statusline+=%0*\ %<%F\ 
 "File+path
-set statusline+=%2*\ %y\ 
+set statusline+=%0*\ %y\ 
 "FileType
-set statusline+=%3*\ %{''.(&fenc!=''?&fenc:&enc).''}
+set statusline+=%0*\ %{''.(&fenc!=''?&fenc:&enc).''}
 "Encoding
-set statusline+=%3*\ %{(&bomb?\",BOM\":\"\")}\ 
+set statusline+=%0*\ %{(&bomb?\",BOM\":\"\")}\ 
 "Encoding2
-set statusline+=%4*\ %{&ff}\ 
+set statusline+=%0*\ %{&ff}\ 
 "FileFormat (dos/unix..)
-set statusline+=%8*\ %=\ row:%l/%L\ (%03p%%)\ 
+set statusline+=%9*\ %=\ %0*row:%l/%L\ (%03p%%)\ 
 "Rownumber/total (%)
-set statusline+=%9*\ col:%03c\ 
+set statusline+=%0*\ col:%03c\ 
 "Colnr
 set statusline+=%0*\ %m%r%w\ %P\ \ 
 "Modified? Readonly? Top/bot.
@@ -52,9 +52,9 @@ set statusline+=%0*\ %m%r%w\ %P\ \
 set laststatus=2
 
 " now set it up to change the status line based on mode
-hi statusline ctermbg=white ctermfg=red
+hi statusline cterm=bold ctermfg=233 ctermbg=255 gui=bold guifg=#111111 guibg=#EEEEEE
 if version >= 700
-  au InsertEnter * hi statusline term=reverse ctermbg=157 guibg=#BBFFAA
-  au InsertLeave * hi statusline ctermfg=3 ctermbg=0
+  au InsertEnter * hi statusline ctermbg=195 guibg=#CBE4EE
+  au InsertLeave * hi statusline cterm=bold ctermfg=233 ctermbg=255 gui=bold guifg=#111111 guibg=#EEEEEE
 endif
 
