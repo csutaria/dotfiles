@@ -79,7 +79,7 @@ bindkey "\e[A" history-beginning-search-backward
 bindkey "\e[B" history-beginning-search-forward
 
 # Source local file for overriding defaults + machine specific settings
-if [[ -f ~/.zshrc_local ]]; then
-  source ~/.zshrc_local
-fi
+#if [[ -f ~/.zshrc_local ]]; then
+#  source ~/.zshrc_local
+#fi
 
