@@ -24,12 +24,7 @@ fi
 bindkey '^_' undo
 bindkey '^+' redo
 
-alias resource='source ~/.zshrc'
-alias ll='ls -l'
-alias la='ls -la'
-alias vim='nvim -p'
-alias view='nvim -R -p'
-alias vimdiff='nvim -d'
+
 
 # dotfile management based on:
 # https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
