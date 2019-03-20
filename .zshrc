@@ -30,6 +30,7 @@ alias la='ls -la'
 alias vim='nvim -p'
 alias view='nvim -R -p'
 alias vimdiff='nvim -d'
+source ~/perl5/perlbrew/etc/bashrc
 
 # dotfile management based on:
 # https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
@@ -75,6 +76,9 @@ zle -N down-line-or-beginning-search
 [[ -n "${key[Left]}"     ]]  && bindkey  "${key[Left]}"     backward-char
 [[ -n "${key[Right]}"    ]]  && bindkey  "${key[Right]}"    forward-char
 
+bindkey "\e[1~" beginning-of-line
+bindkey "\e[4~" end-of-line
+
 bindkey "\e[A" history-beginning-search-backward
 bindkey "\e[B" history-beginning-search-forward
 
@@ -83,3 +87,10 @@ if [[ -f ~/.zshrc_local ]]; then
   source ~/.zshrc_local
 fi
 
+PATH=$PATH:/Users/cyrus/Library/Application\ Support/JetBrains/Toolbox/bin
+
+PATH="/Users/cyrus/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/Users/cyrus/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/Users/cyrus/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/Users/cyrus/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/cyrus/perl5"; export PERL_MM_OPT;
