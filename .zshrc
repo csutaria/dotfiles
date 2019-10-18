@@ -1,4 +1,5 @@
-fpath=( "$HOME/.zfunctions" $fpath )
+fpath+=("$HOME/.zfunctions")
+fpath+=("$HOME/.zfunctions/pure")
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.zsh_history
 HISTSIZE=1000
@@ -14,7 +15,7 @@ compinit
 # End of lines added by compinstall
 
 setopt nolistbeep autolist AUTO_CD
-if [[ -e ~/.zfunctions/prompt_pure_setup ]]; then
+if [[ -e ~/.zfunctions/pure/prompt_pure_setup ]]; then
   autoload -Uz promptinit; promptinit
   PURE_PROMPT_SYMBOL='>>'
   PURE_GIT_PULL=0
