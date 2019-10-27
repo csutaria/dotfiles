@@ -29,7 +29,7 @@ alias resource='source ~/.zshrc'
 alias ll='ls -l'
 alias la='ls -la'
 alias vim='nvim -p'
-alias view='nvim -R -p'
+#alias view='nvim -R -p'
 #alias vimdiff='nvim -d'
 
 # dotfile management based on:
