@@ -1,4 +1,3 @@
-fpath+=("$HOME/.zfunctions")
 fpath+=("$HOME/.zfunctions/pure")
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.zsh_history

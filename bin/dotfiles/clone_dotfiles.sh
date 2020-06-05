@@ -13,4 +13,5 @@ config config --local status.showUntrackedFiles no
 
 mkdir -p $HOME/.zfunctions
 git clone https://github.com/sindresorhus/pure.git "$HOME/.zfunctions/pure"
-
+chmod 755 .zfunctions
+chmod 755 .zfunctions/pure
